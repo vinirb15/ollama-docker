@@ -7,6 +7,10 @@ sleep 5
 
 echo "Baixando o modelo DeepSeek..."
 ollama pull deepseek-coder:1.3b
+ollama pull codellama:7b
+ollama pull codegemma:2b
+ollama pull gemma3:4b
+ollama pull llama3.2
 
 ollama list
 
