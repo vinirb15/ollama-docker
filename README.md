@@ -19,9 +19,10 @@ Run multiple open-source large language models (LLMs) locally using [Ollama](htt
 By default, the container pulls the following models on startup:
 
 - `deepseek-coder:1.3b`
-- `codellama:13b`
-- `mistral:7b`
-- `llama2:7b`
+- `codellama:7b`
+- `codegemma:2b`       
+- `gemma3:4b`        
+- `llama3.2`          
 
 You can customize the models pulled by editing the `entrypoint.sh` file.
 
@@ -38,12 +39,12 @@ cd local-llm-ollama-docker
 
 ### 2. Build the Docker image
 ```bash
-docker build -t ollama-deepseek .
+docker build -t ollama-docker .
 ```
 
 ### 3. Run the Docker container
 ```bash
-docker run -it -d -p 11434:11434 --name ollama-deepseek ollama-deepseek
+docker run -it -d -p 11434:11434 --name ollama-docker ollama-docker
 ```
 ## Utils
 
